@@ -125,7 +125,7 @@ ifndef CFLAGS
     endif
 endif
 
-CFLAGS += -Wall -Werror -Wshadow -Wextra -Iinc \
+CFLAGS += -Wall -Werror -Wshadow -Wextra -Iinc -Wno-format-truncation \
           $(CURL_CFLAGS) $(LIBXML2_CFLAGS) \
           -DLIBS3_VER_MAJOR=\"$(LIBS3_VER_MAJOR)\" \
           -DLIBS3_VER_MINOR=\"$(LIBS3_VER_MINOR)\" \
